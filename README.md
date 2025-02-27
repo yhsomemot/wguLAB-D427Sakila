@@ -13,6 +13,8 @@ The query should exclude films with no actors and actors that do not appear in f
 
 Hint: Use the ROUND() and AVG() functions.
 
+[answer](https://github.com/yhsomemot/wguLAB-D427Sec3/blob/main/answer/sec3.6.sql)
+
 ---
 
 - 3.7 LAB - Nested aggregates (Sakila)
