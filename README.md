@@ -21,3 +21,5 @@ Refer to the film and inventory tables of the Sakila database. The tables in thi
 Write a query that lists the titles of films with the fewest rows in the inventory table.
 
 This query requires a subquery that computes the minimum of counts by film_id:
+
+[answer](https://github.com/yhsomemot/wguLAB-D427Sec3/blob/main/answer/sec3.7.sql)
