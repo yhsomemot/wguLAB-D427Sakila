@@ -37,14 +37,16 @@ The relationships are store-has-phone, staff-has-phone, and customer-has-phone. 
 
 The diagram uses Sakila naming conventions. Follow the Sakila conventions for your table and column names:
 
-All lower case
-Underscore separator between root and suffix
-Foreign keys have the same name as referenced primary key
+- All lower case
+- Underscore separator between root and suffix
+- Foreign keys have the same name as referenced primary key
+
 Write CREATE TABLE and ALTER TABLE statements that:
 
-Implement the entity as a new phone table.
-Implement the has relationships as foreign keys in the Sakila customer, staff, and store tables.
-Remove the existing phone column from the Sakila address table.
+1. Implement the entity as a new phone table.
+2. Implement the has relationships as foreign keys in the Sakila customer, staff, and store tables.
+3. Remove the existing phone column from the Sakila address table.
+
 Step 2 requires adding a foreign key constraint to an existing table. Ex:
 
 ```
@@ -56,13 +58,14 @@ ALTER TABLE customer
 
 Specify data types as follows:
 
-phone_id, phone_number, and country_code have data type INT.
-phone_type has data type VARCHAR(12) and contains strings like 'Home', 'Mobile', and 'Other'.
+- phone_id, phone_number, and country_code have data type INT.
+- phone_type has data type VARCHAR(12) and contains strings like 'Home', 'Mobile', and 'Other'.
+
 Apply these constraints:
 
-NOT NULL and UNIQUE constraints correspond to cardinalities on the diagram above.
-Foreign key actions are SET NULL for delete rules and CASCADE for update rules.
-Specify a suitable column as the phone table primary key.
+- NOT NULL and UNIQUE constraints correspond to cardinalities on the diagram above.
+- Foreign key actions are SET NULL for delete rules and CASCADE for update rules.
+- Specify a suitable column as the phone table primary key.
 
 [answer](https://github.com/yhsomemot/wguLAB-D427Sec3and4/blob/main/answer/sec4.12.sql)
 
