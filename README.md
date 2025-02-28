@@ -49,7 +49,7 @@ Write CREATE TABLE and ALTER TABLE statements that:
 
 Step 2 requires adding a foreign key constraint to an existing table. Ex:
 
-```
+```sql
 ALTER TABLE customer 
   ADD FOREIGN KEY (phone_id) REFERENCES phone(phone_id)
   ON DELETE SET NULL
