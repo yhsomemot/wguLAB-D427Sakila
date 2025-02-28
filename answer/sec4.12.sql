@@ -33,6 +33,7 @@ ON UPDATE CASCADE;
 
 ALTER TABLE customer
 ADD UNIQUE (phone_id);
+
 ALTER TABLE staff
 ADD UNIQUE (phone_id);
 
