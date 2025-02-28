@@ -1,4 +1,4 @@
-# wguLAB-D427Sec3
+# wguLAB-D427Saklia
 
 - 3.6 LAB - Multiple joins with aggregate (Sakila)
 Refer to the film, actor, and film_actor tables of the Sakila database. The tables in this lab have the same columns and data types but fewer rows.
