@@ -47,10 +47,13 @@ Implement the has relationships as foreign keys in the Sakila customer, staff, a
 Remove the existing phone column from the Sakila address table.
 Step 2 requires adding a foreign key constraint to an existing table. Ex:
 
+```
 ALTER TABLE customer 
   ADD FOREIGN KEY (phone_id) REFERENCES phone(phone_id)
   ON DELETE SET NULL
   ON UPDATE CASCADE;
+```
+
 Specify data types as follows:
 
 phone_id, phone_number, and country_code have data type INT.
